@@ -70,6 +70,8 @@ src
 
 El diagrama UML forma parte de la entrega y representa la estructura de clases del sistema.
 
-## Autor
+## Diagrama UML
 
-Alexis Gutiérrez
+El siguiente diagrama representa la estructura del sistema desarrollado.
+
+![Diagrama UML](UML_Sistema_Gestion_Usuarios.png)
