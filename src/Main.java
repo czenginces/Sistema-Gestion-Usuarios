@@ -142,7 +142,7 @@ public class Main {
                     System.out.println("Inicio de sesión correcto. Bienvenido/a " + usuario.getNombre() + ".");
                     volverAlMenu = true;
                 } else {
-                    System.out.println("Error: Perfil de usuario NO administrador.");
+                    System.out.println("Error: El usuario existe, pero no tiene permisos de administrador.");
                     volverAlMenu = menuReintentarOVolver();
                 }
 
@@ -216,7 +216,7 @@ public class Main {
                 Usuario usuario = sistema.buscarPorEmail(email);
 
                 if (!(usuario instanceof Admin)) {
-                    throw new UsuarioNoEncontradoException("Usuario NO existe.");
+                    throw new UsuarioNoEncontradoException("El usuario existe, pero no tiene permisos de administrador.");
                 }
 
                 System.out.print("Nueva contraseña: ");
